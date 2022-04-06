@@ -20,10 +20,10 @@ export class FaceSnapComponent implements OnInit
     console.log("onSnap");
     console.log('====================================');
     if (this.buttonText === 'Oh Snap !') {
-      this.faceSnap.snaps++;
+      this.faceSnap.snaps+=this.faceSnap.snaps+100;
       this.buttonText = 'Oups, unSnap !';
     } else {
-      this.faceSnap.snaps--;
+      this.faceSnap.snaps-=this.faceSnap.snaps-50;
       this.buttonText = 'Oh Snap !';
     }
   }
